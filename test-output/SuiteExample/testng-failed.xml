@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [SuiteExample]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Tests(failed)">
+    <parameter name="password" value="password"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="Testactivity1">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="newTitle"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Testactivity1 -->
+      <class name="Testactivity2">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testSkippedWithException"/>
+          <include name="afterClass"/>
+          <include name="testBlackButton"/>
+        </methods>
+      </class> <!-- Testactivity2 -->
+    </classes>
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [SuiteExample] -->
